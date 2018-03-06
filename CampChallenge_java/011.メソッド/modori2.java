@@ -1,4 +1,4 @@
-e/*
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -29,11 +29,32 @@ public class modori2 extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
+    
+   String [] prof(){
+       
+       String [] jinbutu = new String [4];
+            jinbutu[0]= "89383";
+            jinbutu[1]="齋藤彩花";
+            jinbutu[2]="1998年12月25日";
+            jinbutu[3]="埼玉県草加市";
+          
+      return  jinbutu ;
+    
+             }
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
+            
+            
+            String [] name = prof();
+            out.print(name[1]);
+            out.print(name[2]);
+            out.print(name[3]);
+     
+      
+            
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
