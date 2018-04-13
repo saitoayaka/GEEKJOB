@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+           body div{ 
+                color: blue;
+           }
+        </style>
+    </head>
+    <body>
+        <h1>クエストリング１</h1>
+        <!--forｍを指定-->
+        <form action ="sa-buretto1.jsp" method = "get">
+            
+            <div>
+                半角数字でご記入ください<br><br>
+                商品種別番号は
+                <ol>
+                <li>雑貨</li>
+                <li>生鮮食品</li>   
+                <li>その他</li>    
+                </ol>
+              </div>
+            
+       <!--購入総金額　名前：total-->
+       購入総金額 <br><input type ="number" name = "total"><br>
+       <!--購入した商品の数量　名前：count-->
+       購入した商品の数量<br> <input type ="number" name = "count"><br>
+       <!--商品種別　名前：type-->
+       商品番号 <br><input type = "number" name = "type" min="1" max="3"><br><br>
+        <!--送信ボタン作成-->
+        <input type = "submit" name ="btnSubmit" value ="送信">
+        
+        
+       </form>     
+    </body>
+</html>
