@@ -29,23 +29,23 @@
              
         //商品の種類
         if(type == 1){
-        System.out.print("雑貨"+count+"点<br>");
+        out.print("雑貨"+count+"点<br>");
         }else if(type == 2){
-        System.out.print("生鮮食品"+count+"点<br>");
+        out.print("生鮮食品"+count+"点<br>");
         }else{
-        System.out.print("その他"+count+"点<br>");
+        out.print("その他"+count+"点<br>");
         }
         
         //画面表示　商品の単価は
-          out.print("商品1点当たりの単価は"+total * count+"円です<br>");
+          out.print("商品1点当たりの単価は"+total / count+"円です<br>");
         
         //画面表示　ｐｔ数
         if(total >= 5000){
-        System.out.print("獲得ｐｔ数は"+total*0.05+"pt");
+        out.print("獲得ｐｔ数は"+total*0.05+"pt");
         }else if(total >= 3000 && total <5000){
-        System.out.print("獲得ｐｔ数は"+total*0.03+"pt");
+        out.print("獲得ｐｔ数は"+total*0.03+"pt");
         }else{
-        System.out.print("獲得ｐｔ数は0ptです。");
+        out.print("獲得ｐｔ数は0ptです。");
         }
         
         %>
