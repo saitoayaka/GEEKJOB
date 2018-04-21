@@ -25,7 +25,8 @@ public class DBsousa4 {
         db_con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Challenge_db","hayong","hayong1225");
         
       
-        db_st = db_con.prepareStatement("SELECT * from profiles where profileID = 1;");
+        db_st = db_con.prepareStatement("SELECT * from profiles WHERE profileID = ?;");
+        db_st.setInt(1,1);
         db_data= db_st.executeQuery();
     
 
